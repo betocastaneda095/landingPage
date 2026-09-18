@@ -120,27 +120,21 @@ button {
 
 
 .info {
-    background-color:blueviolet;
-
     display:flex;
     flex-direction:column;
-
 }
 
 .info .header {
-    
-    
+    display:flex;
+justify-content: center;   
 }
 
 .info-content {
-    background-color: red;    
     height:250px;
     display:flex;
-
 }
 
-.info-subcontent{
-    background-color:gray;
+.info-subcontent{ 
     display:flex;
     flex-basis:100%;   
     flex-shrink:1;
@@ -149,16 +143,124 @@ button {
 
 .info-card-container {
     display:flex;
-    gap:40px;
+    gap:70px;
+    color:rgb(72, 71, 71);
+    font-size:10px;
 }
 
 .info-card {
     /* wrap default */
     box-sizing:border-box;
-    flex-basis:150px;
+    flex-basis:100px;   
+}
+
+.info-card p {
+    text-align:center;
 }
 .info-card .placeholder-img {
-    background-color:bisque;
-    height:150px;
-    flex-basis:150px;
+    box-sizing:border-box;  
+    border:solid rgb(5, 18, 168);
+    height:100px;
+    flex-basis:100px;
+    border-radius: 10px;
 }
+
+
+/* --------- QUOTE SECTION --------*/
+
+
+.quote {
+    display:flex;
+    background-color:rgb(220, 220, 220);
+    flex-basis:auto;
+    height:250px;
+    justify-content:center;
+    align-items:center; 
+}
+
+.quote .content {
+    flex-basis:550px;
+    flex-shrink:1;
+    flex-grow:0;
+    height:100px;
+    align-items:center;
+    text-align:left;
+    line-height: 25px;
+}
+
+.quote p:first-child{
+    font-size:24px;
+    color:rgb(80, 79, 79);      
+}
+
+.quote p:last-child{
+    text-align:right;
+}
+
+/* --------- ACCOUNT SECTION --------*/
+
+
+.account {
+    display:flex;
+    height:200px;
+    justify-content:center;
+    align-items:center;
+}
+
+.account-content {
+    box-sizing:border-box;
+    flex-basis:804px;
+    flex-shrink:1;
+    height: 125px;
+    border-radius: 10px;
+    background-color:#607dff;
+    display:flex;
+    overflow:hidden;
+
+}
+
+.account-content .text {
+   flex-basis:65%;
+   flex-shrink:1;
+   padding-left:89px;
+   justify-content:center;
+   display:flex;
+   flex-direction:column;
+   color:antiquewhite;
+}
+.account-content .text p {
+    margin:0px;
+    font-size: 16px;
+    color:rgb(222, 215, 206);
+}
+
+.account-content .text p:first-child {
+    font-size:20px;
+    color:antiquewhite;
+}
+
+.sign-up-button {
+    flex-basis:auto;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+}
+
+.sign-up-button .signup {
+    background-color: #607dff;
+    color: antiquewhite;
+    border:solid antiquewhite;
+    border-width: 2px;
+    font-size:12px;
+}
+
+footer {
+    display:flex;
+    background-color:rgb(2, 20, 36);  
+    height:100px;
+    color:antiquewhite;
+    font-size:12px;
+    justify-content:center;
+    align-items:center;
+}
+
